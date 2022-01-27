@@ -1,0 +1,33 @@
+body {
+	background: rgba(200, 200, 200, 1.0);
+}
+h1 {
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: -20px;
+}
+#aboutme {
+	display: grid;
+	grid-template-columns: 60%, 40%;
+	grid-template-rows: 70%, 30%;
+	margin: 30px;
+}
+
+#title2 {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	margin-top: 60px;
+	margin-bottom: -50px;
+}
+
+#decrip1 {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	margin: -50px;
+}
+
+#img1 {
+	grid-row: 1 / span 2;
+	grid-column-start: 2;
+	padding: 20px;
+}
