@@ -9,8 +9,9 @@ h1 {
 #aboutme {
 	display: grid;
 	grid-template-columns: 60%, 40%;
-	grid-template-rows: 70%, 30%;
-	margin: 30px;
+	grid-template-rows: 60%, 40%;
+	margin: 60px;
+	padding: 90px;
 }
 
 #title2 {
@@ -30,4 +31,44 @@ h1 {
 	grid-row: 1 / span 2;
 	grid-column-start: 2;
 	padding: 20px;
+}
+
+#hobbiesall {
+	display: grid;
+	grid-template-columns: 50%, 50%;
+	grid-template-rows: 50%, 50%;
+}
+
+#hobbie1 {
+	border-color: rgba(50, 115, 240, 0.8);
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 30%, 70%;
+}
+#h1t {
+	grid-column-start: 1;
+}
+#h1d {
+	grid-column-start: 1;
+}
+#h1i {
+	grid-column-start: 2;
+}
+
+
+
+#hobbie2 {
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+
+#hobbie3 {
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+
+#hobbie4 {
+	grid-column-start: 2;
+	grid-row-start: 2;
 }
