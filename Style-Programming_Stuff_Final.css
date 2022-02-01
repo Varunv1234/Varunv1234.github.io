@@ -47,33 +47,82 @@ h1 {
 	grid-column-start: 1;
 	grid-row-start: 1;
 	display: grid;
-	grid-template-columns: 30%, 70%;
-	grid-template-rows: 10%, 90%;
+	grid-template-columns: 10%, 90%;
+	grid-template-rows: 50%, 50%;
 }
 
 #h1d {
-	margin-top: -200px;
+	margin-top: -220px;
+	margin-right: 100px;
 }
 
 #h1i {
 	grid-column-start: 2;
 	grid-row-start: 1;
+	margin-left: -50;
 }
 
 
 
 #hobbie2 {
-	border-width: ;
+	border-color: rgba(50, 115, 240, 0.8);
+	border-width: 5px;
+	border-style: double;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 10%, 90%;
+	grid-template-rows: 50%, 50%;
+}
+
+#h2d {
+	margin-top: -220px;
+	margin-right: 100px;
+}
+
+#h2i {
 	grid-column-start: 2;
 	grid-row-start: 1;
+	margin-left: -50;
 }
 
 #hobbie3 {
+	border-color: rgba(50, 115, 240, 0.8);
+	border-width: 5px;
+	border-style: double;
 	grid-column-start: 1;
-	grid-row-start: 2;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 10%, 90%;
+	grid-template-rows: 50%, 50%;}
+#h3d {
+	margin-top: -220px;
+	margin-right: 100px;
+}
+
+#h3i {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	margin-left: -50;
 }
 
 #hobbie4 {
+	border-color: rgba(50, 115, 240, 0.8);
+	border-width: 5px;
+	border-style: double;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 10%, 90%;
+	grid-template-rows: 50%, 50%;
+}
+#h4d {
+	margin-top: -220px;
+	margin-right: 100px;
+}
+
+#h4i {
 	grid-column-start: 2;
-	grid-row-start: 2;
+	grid-row-start: 1;
+	margin-left: -50;
 }
