@@ -2,25 +2,88 @@ h1 {
 	text-align: center;
 	padding-top: 375px;
 	color: red;
-	animation-name: example;
+	animation-name: test;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate-reverse;
 	font-family: 'Open Sans Condensed', cursive;
+	font-size: 45px;
 }
 
 body {
 	background: rgba(0, 0, 0, 1.0)
 }
 
-@keyframes example {
+@keyframes test {
   from {: red;}
   to {color: yellow;}
+}
+#b1a {
+	padding-top: 245px;
+	color: blue;
+	text-align: center;
+	font-size: 28px;
+	font-family: 'Fira Sans Black 900 italic', sans-serif;
+
+}
+
+#h1ad {
+  width: 30px;
+  height: 8px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation-name: animationstuff;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+  	animation-timing-function: ease-in-out;
+}
+
+
+}
+@keyframes animationstuff {
+  from {left: 750px;}
+  to {left: 900px;}
 }
 
 body {
 	background: rgba(0, 0, 0, 1.0);
 }
+
+#b1 {
+	display: grid;
+	grid-template: auto auto / 500px 1fr;
+	margin-top: 375px;
+	padding: 100px;
+	grid-gap: 20px;
+	color: rgba(50, 115, 240, 0.8)
+
+}
+
+#b1t {
+	grid-column-start: 2;
+	grid-row: 1;
+	font-size: 45px;
+	margin-top: 0px;
+	font-family: 'Fira Sans Black 900 italic', sans-serif;
+
+}
+
+#b1d {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	margin-top: -420px;
+	font-size: 35px;
+	font-family: 'Fira Sans', sans-serif;
+
+}
+
+#b1i {
+	grid-column-start: 1;
+	grid-row-start: 1 / span 2;
+}
+
 #hobbiesall {
 	display: grid;
 	grid-template: auto auto / auto auto;
