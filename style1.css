@@ -1,3 +1,33 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(100, 100, 100, 1.0);
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
 h1 {
 	text-align: center;
 	padding-top: 375px;
@@ -89,7 +119,7 @@ body {
 	text-align: center;
 	font-size: 28px;
 	font-family: 'Open Sans Condensed', cursive;
-		margin-top: -70px;
+		margin-top: 300px;
 
 
 }
@@ -119,7 +149,7 @@ animation-timing-function: ease-in-out;
 #hobbiesall {
 	display: grid;
 	grid-template: auto auto / auto auto;
-	margin-top: 375px;
+	margin-top: 0px;
 	padding: 60px;
 	grid-gap: 20px;
 	color: rgba(240, 240, 240, 0.8)
@@ -250,6 +280,7 @@ animation-timing-function: ease-in-out;
 	text-align: center;
 	font-size: 28px;
 	font-family: 'Open Sans Condensed', cursive;
+	padding-top: 300px;
 
 
 }
@@ -277,7 +308,7 @@ animation-timing-function: ease-in-out;
 #ga {
 	font-family: 'Open Sans Condensed', cursive;
 	padding-left: 20px;
-	padding-top: 300px;
+	padding-top: 50px;
 	display: grid;
 	grid-template: 250px 250px 250px 250px / 250px 1fr;
 
