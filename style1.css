@@ -6,7 +6,7 @@ ul {
   background-color: rgba(100, 100, 100, 1.0);
   position: -webkit-sticky; 
   position: sticky;
-  top: 0;
+  top: 0px;
 }
 
 li {

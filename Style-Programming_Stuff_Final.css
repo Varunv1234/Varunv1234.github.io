@@ -1,0 +1,128 @@
+body {
+	background: rgba(200, 200, 200, 1.0);
+}
+h1 {
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: -20px;
+}
+#aboutme {
+	display: grid;
+	grid-template-columns: 60%, 40%;
+	grid-template-rows: 60%, 40%;
+	margin: 60px;
+	padding: 90px;
+}
+
+#title2 {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	margin-top: 60px;
+	margin-bottom: -50px;
+}
+
+#decrip1 {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	margin: -50px;
+}
+
+#img1 {
+	grid-row: 1 / span 2;
+	grid-column-start: 2;
+	padding: 20px;
+}
+
+#hobbiesall {
+	display: grid;
+	grid-template-columns: 50%, 50%;
+	grid-template-rows: 50%, 50%;
+	padding: 60px;
+}
+
+#hobbie1 {
+	border-color: rgba(50, 115, 240, 0.8);
+	border-width: 5px;
+	border-style: double;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 10%, 90%;
+	grid-template-rows: 50%, 50%;
+}
+
+#h1d {
+	margin-top: -220px;
+	margin-right: 100px;
+}
+
+#h1i {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	margin-left: -50;
+}
+
+
+
+#hobbie2 {
+	border-color: rgba(50, 115, 240, 0.8);
+	border-width: 5px;
+	border-style: double;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 10%, 90%;
+	grid-template-rows: 50%, 50%;
+}
+
+#h2d {
+	margin-top: -220px;
+	margin-right: 100px;
+}
+
+#h2i {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	margin-left: -50;
+}
+
+#hobbie3 {
+	border-color: rgba(50, 115, 240, 0.8);
+	border-width: 5px;
+	border-style: double;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 10%, 90%;
+	grid-template-rows: 50%, 50%;}
+#h3d {
+	margin-top: -220px;
+	margin-right: 100px;
+}
+
+#h3i {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	margin-left: -50;
+}
+
+#hobbie4 {
+	border-color: rgba(50, 115, 240, 0.8);
+	border-width: 5px;
+	border-style: double;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: grid;
+	grid-template-columns: 10%, 90%;
+	grid-template-rows: 50%, 50%;
+}
+#h4d {
+	margin-top: -220px;
+	margin-right: 100px;
+}
+
+#h4i {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	margin-left: -50;
+}
