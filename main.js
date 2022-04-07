@@ -26,7 +26,7 @@ var clear2 = document.getElementById("clear2");
  clear3.addEventListener("click", clear13);
 
  var clear4 = document.getElementById("clear4");
- clear4.addEventListener("click", clear14)
+ clear4.addEventListener("click", clear14);
 
 var clear5 = document.getElementById("clear5");
  clear5.addEventListener("click", clear15);
@@ -45,7 +45,7 @@ var clear2 = document.getElementById("up2");
  clear3.addEventListener("click", up13);
 
  var clear4 = document.getElementById("up4");
- clear4.addEventListener("click", up14)
+ clear4.addEventListener("click", up14);
 
 var clear5 = document.getElementById("up5");
  clear5.addEventListener("click", up15);
