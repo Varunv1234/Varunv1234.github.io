@@ -13,6 +13,9 @@ var countNumber = 7
 //console.log(inputObj.priority);
 //console.log(inputObj.rank);
 
+
+// event listeners for all buttons
+
 var enter = document.getElementById("enter");
  enter.addEventListener("click", createItem);
 
@@ -34,29 +37,12 @@ var clear5 = document.getElementById("clear5");
 var clear6= document.getElementById("clear6");
  clear6.addEventListener("click", clear16);
 
-/*
-var clear1 = document.getElementById("up1");
- clear1.addEventListener("click", up11);
 
-var clear2 = document.getElementById("up2");
- clear2.addEventListener("click", up12);
-
- var clear3 = document.getElementById("up3");
- clear3.addEventListener("click", up13);
-
- var clear4 = document.getElementById("up4");
- clear4.addEventListener("click", up14);
-
-var clear5 = document.getElementById("up5");
- clear5.addEventListener("click", up15);
-
-var clear6= document.getElementById("up6");
- clear6.addEventListener("click", up16);
-*/
-
-
+// function that creates text on to-do list
 
 function createItem() {
+
+//creates object out of inputs
 var inputObj = new Object();
 inputObj.item = document.getElementById('item').value;
 inputObj.date = document.getElementById('date').value;
@@ -68,6 +54,8 @@ inputObj.todaydateInt = parseInt(inputObj.todayDate);
 inputObj.clickNumber = clickNumber;
 inputObj.rank = inputObj.priorityInt/(inputObj.dateInt - inputObj.todaydateInt) * 1/3;
 
+
+//accounts for already-existing text (currently redundant)
 var sevenObj = new Object();
 sevenObj.item = document.getElementById('op71').value;
 sevenObj.date = document.getElementById('op72').value;
@@ -136,12 +124,15 @@ twoObj.todaydateInt = parseInt(twoObj.todayDate);
 twoObj.clickNumber = clickNumber;
 twoObj.rank = twoObj.priorityInt/(twoObj.dateInt - twoObj.todaydateInt) * 1/3;
 
-const dateOp = inputObj.dateInt + 7;
+
+//places text on calendar
+const dateOp = (inputObj.dateInt) + 5;
 console.log(inputObj.dateInt);
 console.log(dateOp);
 var textField = document.getElementById("c" + dateOp);
   textField.innerHTML = '<h4>' + " " + inputObj.item + " " + inputObj.priority + ' </h4>';
 
+//places text on list, if statements for ranking which doesn't work
 var placeNumber = clickNumber
  if (twoObj.rank >= inputObj.rank || twoObj.rank == NaN) {
 	return placeNumber = placeNumber + 1;
@@ -205,6 +196,7 @@ if (sevenObj.rank >= inputObj.rank || sevenObj.rank == NaN) {
 }
 
 
+//changes backround color based on priority
 if (inputObj.priorityInt == 1) {
 	document.getElementById("op" + placeNumber + "1").style.backgroundColor = "rgb(235, 226, 160)";
 	document.getElementById("op" + placeNumber + "2").style.backgroundColor = "rgb(235, 226, 160)";
@@ -236,6 +228,8 @@ if (inputObj.priorityInt == 5) {
 	document.getElementById("op" + placeNumber + "3").style.backgroundColor = "rgb(255, 0, 0)";
 	document.getElementById("c" + dateOp).style.backgroundColor = "rgb(255, 0, 0)";
 }
+
+//clickNumber accounts for amount of times this function is ran and determines the order of tasks on the list
  return clickNumber = clickNumber + 1;
 
 
@@ -243,17 +237,21 @@ if (inputObj.priorityInt == 5) {
 
 }
 
+//clears individual tasks
 function clear11() {
-
+// replaces text with blank
 	var textField = document.getElementById("op21");
   textField.innerHTML = '<h4> </h4>';
   var textField2 = document.getElementById("op22");
   textField2.innerHTML = '<h4> </h4>';
   var textField3 = document.getElementById("op23");
   textField3.innerHTML = '<h4> </h4>';
+//  changes backgroundColor to normal
  	document.getElementById("op21").style.backgroundColor = "rgba(245, 245, 245, 0.8)";
  	document.getElementById("op22").style.backgroundColor = "rgba(245, 245, 245, 0.8)";
  	document.getElementById("op23").style.backgroundColor = "rgba(245, 245, 245, 0.8)";
+
+ 	// clickNumber allowsx
  return clickNumber = 2;
 
 }
